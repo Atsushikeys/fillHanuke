@@ -23,8 +23,8 @@ function hanuke() {
     
     //upCellとdownCellが一緒なら当該セルに書き込み
     if(upCell === downCell){
-       thisCell = sheet.getRange(i, 3).setValue(upCell);
-      Logger.log("%n当該セルの値は「%s」",thisCell);
+       sheet.getRange(i-1, 3).copyTo(sheet.getRange(i, 3));
+      Logger.log("%n空白セルを発見しました。");
     }
   
   }
