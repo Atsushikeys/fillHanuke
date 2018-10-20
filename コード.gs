@@ -1,4 +1,7 @@
 function hanuke() {
+  //開始時間取得
+  var startTime = new Date();
+  
   //Spreadsheetオブジェクトを取得
   var sheet = SpreadsheetApp.getActiveSheet();
   
@@ -26,8 +29,28 @@ function hanuke() {
        sheet.getRange(i-1, 3).copyTo(sheet.getRange(i, 3));
       Logger.log("%n空白セルを発見しました。");
     }
-  
+    
+  //forループ終了
   }
+  
+  //終了時間
+  var endTime = new Date();
+  Logger.log("実行時間は「%s秒」でした",(endTime-startTime)/1000);
+  
+}
+
+function initialize(){
+  //セル初期化用関数
+  
+  //Spreadsheetオブジェクトを取得
+  var sheet = SpreadsheetApp.getActiveSheet();
+  
+  //lastRowを取得
+  var lastRow = sheet.getLastRow();
+  
+  //シートを初期化
+  sheet.getRange(3, 3, lastRow).clear();
+  
   
   
 }
