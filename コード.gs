@@ -39,9 +39,9 @@ function hanuke() {
   
 }
 
+//セル初期化用関数
 function initialize(){
-  //セル初期化用関数
-  
+    
   //Spreadsheetオブジェクトを取得
   var sheet = SpreadsheetApp.getActiveSheet();
   
