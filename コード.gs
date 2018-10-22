@@ -29,7 +29,7 @@ function hanuke() {
     
     //upCellとdownCellが一緒なら当該セルに書き込み
     if(upCell === downCell){
-       sheet.getRange(i-1, 3).copyTo(sheet.getRange(i, 3));
+       sheet.getRange(i-lookRows, 3).copyTo(sheet.getRange(i, 3));
       Logger.log("%n空白セルを発見しました。");
     }
     
