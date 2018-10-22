@@ -9,10 +9,10 @@ function hanuke() {
   var lastRowToCopy = sheet.getLastRow();
   
   //何行上まで見るか
-  var lookRows = sheet.getRange(3, 1).getValue();
+  var lookRows = sheet.getRange("B5").getValue();
   
   //上下を比較して歯抜けを埋めていく
-  for(var i=4; i<=lastRowToCopy; i++){
+  for(var i=6; i<=lastRowToCopy; i++){
     
     Logger.log("現在は%s行目",i);
     //上のセルを取得
