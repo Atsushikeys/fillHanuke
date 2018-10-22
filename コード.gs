@@ -9,7 +9,7 @@ function hanuke() {
   var lastRowToCopy = sheet.getLastRow();
   
   //何行上まで見るか
-  var lookRows = sheet.getRange(3, 1);
+  var lookRows = sheet.getRange(3, 1).getValue();
   
   //上下を比較して歯抜けを埋めていく
   for(var i=4; i<=lastRowToCopy; i++){
