@@ -53,6 +53,9 @@ function initialize(){
   //シートを初期化
   sheet.getRange(3, actColumn, lastRowToCopy).clear();
   
+  //初期化後に行数を入力
+  sheet.getRange(3, actColumn).setValue(actColumn);
+  
   
   
 }
