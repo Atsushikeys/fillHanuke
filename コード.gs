@@ -13,7 +13,7 @@ function hanuke() {
   
 
   
-  //何行上まで見るか
+  //歯抜けの行数
   var lookRows = sheet.getRange("B5").getValue();
   
   //上下を比較して歯抜けを埋めていく
