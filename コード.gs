@@ -14,6 +14,8 @@ var lookRows = sheet.getRange("B5").getValue();
 
 //↑グローバル変数定義領域終了
 
+
+
 //新型歯抜け埋めBot
 function hanukeNew(){
   //開始時間取得
@@ -43,8 +45,9 @@ function hanukeNew(){
     
     //beforeIndexとafterIndexが一緒なら当該要素に書き込み
     if(beforeIndex == afterIndex){
-       hanukeArray[i] = beforeIndex;
-       Logger.log("上と下が一致しました");
+      Logger.log("上と下が一致しました");
+      hanukeArray[i] = beforeIndex;
+       
     }
     
   //forループ終了
